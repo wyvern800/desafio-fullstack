@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'welcome';
 });
+
+Route::get('/pessoas', 'PessoaController@lista');
+
+Route::post('/pessoas', 'PessoaController@novo');
+
+Route::put('/pessoas', 'PessoaController@editar');
