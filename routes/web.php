@@ -11,12 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return 'welcome';
-});
+Route::get('/', 'HomeController@index', function () {
+})->middleware('auth');
 
-Route::get('/pessoas', 'PessoaController@lista');
+Route::get('/pessoas', 'PessoaController@lista', function () {
+})->middleware('auth');
 
-Route::post('/pessoas', 'PessoaController@novo');
+Route::post('/pessoas', 'PessoaController@novo', function() {
+})->middleware('auth');
 
-Route::put('/pessoas', 'PessoaController@editar');
+Route::put('/pessoas', 'PessoaController@editar', function() {
+})->middleware('auth');
+
+Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@do']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
