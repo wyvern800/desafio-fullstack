@@ -2,9 +2,6 @@
   <div class="container">
     <div>
 <Navbar />
-      <h1 class="title">
-        Listagem de Usuários
-      </h1>
       <UserList />
       <hr/>
       <Bottom />

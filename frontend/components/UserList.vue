@@ -1,5 +1,6 @@
 <template>
-      <b-table striped hover outlined :busy.sync="isBusy" :items="persons" :fields="fields" :busy="isBusy" class="mt-3" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc">
+  <b-jumbotron header="Adicionar User" lead="Formulário de cadastro de pessoas">
+      <b-table striped hover outlined responsive :busy.sync="isBusy" :items="persons" :fields="fields" :busy="isBusy" class="mt-3" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc">
        <template v-slot:table-busy>
         <div class="text-center text-success my-2">
           <b-spinner class="align-middle"></b-spinner>
@@ -7,6 +8,7 @@
         </div>
       </template>
       </b-table>
+        </b-jumbotron>
  </template>
 
 <script>

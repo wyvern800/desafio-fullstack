@@ -11,5 +11,6 @@
       </b-nav-item-dropdown>
     </b-navbar-nav>
   </b-navbar>
+  <br />
 </div>
 </template>
