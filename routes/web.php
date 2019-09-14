@@ -17,10 +17,10 @@ Route::get('/', 'HomeController@index', function () {
 Route::get('/pessoas', 'PessoaController@lista', function() {
 })->middleware('cors');
 
-Route::post('/pessoas', 'PessoaController@novo', function() {
+Route::post('/pessoas/novo', 'PessoaController@novo', function() {
 })->middleware('auth', 'cors');
 
-Route::put('/pessoas', 'PessoaController@editar', function() {
+Route::put('/pessoas/editar', 'PessoaController@editar', function() {
 })->middleware('auth','cors');
 
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@do']);
