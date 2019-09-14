@@ -3,9 +3,8 @@ O objetivo deste desafio é avaliar o domínio do candidato no desenvolvimento f
 
 ## Instruções gerais
 - [x] Faça um fork deste repositório para realizar o desafio.
-- [x] Não esqueça de nos ensinar como rodar o seu desafio. Utilize o arquivo HOWTORUN.md para as instruções.
-- [x] Não esqueça de nos ensinar como rodar o seu desafio. Utilize o arquivo HOWTORUN.md para as instruções.
-- [x] Após o término do desafio, envie um e-mail para [rh@crmall.com.br](mailto:rh@crmall.com.br) com o assunto *Desafio Fullstack Automaticket - {Seu nome}* e o link do repositório forkado (não é necessário criar Pull Request).
+- [ ] Não esqueça de nos ensinar como rodar o seu desafio. Utilize o arquivo HOWTORUN.md para as instruções.
+- [ ] Após o término do desafio, envie um e-mail para [rh@crmall.com.br](mailto:rh@crmall.com.br) com o assunto *Desafio Fullstack Automaticket - {Seu nome}* e o link do repositório forkado (não é necessário criar Pull Request).
 
 O desafio consiste em um CRUD de usuários.<br>
 Esperamos que o projeto tenha duas páginas. Uma para a **listagem de usuários** e outra com **formulário de cadastro/edição**.<br>
