@@ -1,6 +1,6 @@
-# desafio
+# frontend
 
-> Front end do site criado para o desafio
+> Desafio fullstack da empresa CR Mall
 
 ## Build Setup
 
