@@ -12,19 +12,20 @@
 */
 
 Route::get('/', 'HomeController@index', function () {
-})->middleware('auth');
+})->middleware('auth', 'cors');
 
-Route::get('/pessoas', 'PessoaController@lista', function () {
-})->middleware('auth');
+Route::get('/pessoas', 'PessoaController@lista', function() {
+})->middleware('cors');
 
 Route::post('/pessoas', 'PessoaController@novo', function() {
-})->middleware('auth');
+})->middleware('auth', 'cors');
 
 Route::put('/pessoas', 'PessoaController@editar', function() {
-})->middleware('auth');
+})->middleware('auth','cors');
 
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@do']);
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home', function () {
+})->middleware('cors');
